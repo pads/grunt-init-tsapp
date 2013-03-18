@@ -8,6 +8,9 @@ exports.description = 'Create a TiddlySpace application';
 
 exports.notes = 'This template will only generate scaffolding if the directory you are running this from is empty';
 
+exports.after = 'Now install project dependencies by running _npm install_.  When that has completed run ' +
+    '_grunt --help_ to see the list of available project tasks';
+
 // Warn on any files and folders already present in the project
 exports.warnOn = '*';
 
