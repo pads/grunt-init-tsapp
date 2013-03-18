@@ -1,7 +1,9 @@
+type: text/html
+
 <!doctype html>
 <html>
     <head>
-        <title>About Space</title>
+        <title>SiteInfo</title>
         <link rel="stylesheet" type="text/css" href="/bags/common/tiddlers/normalize.css" />
     </head>
     <body>
