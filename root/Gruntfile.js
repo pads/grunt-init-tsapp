@@ -4,14 +4,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
         copy: {
-            all: {
-                options: {
-                    flatten: true
-                },
-                files: {
-                    "app/assets/": ["{%= src_dir %}/**/*.*"]
-                }
-            }
+            all: { expand: true, flatten: true, src: ["{%= src_dir %}/**/*.*"], dest: "app/assets/", filter: "isFile" }
         },
         exec: {
             tsserve: {
