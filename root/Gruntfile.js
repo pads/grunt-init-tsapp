@@ -28,7 +28,6 @@ module.exports = function(grunt) {
         grunt.task.run("exec:tsserve");
     });
 
-    grunt.loadNpmTasks("grunt-exec");
-    grunt.loadNpmTasks("grunt-contrib-copy");
+    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
 };
